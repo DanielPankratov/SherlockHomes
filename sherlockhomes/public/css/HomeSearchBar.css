@@ -1,0 +1,112 @@
+.HomePageImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.SearchBarDiv{
+    background-color: aquamarine;
+    height: 50px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: 2px solid;
+  }
+  .SearchBarInput{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: none;
+    outline: none;
+    /* border-style: groove;
+    border-color: black;
+    border: 2px solid; */
+    height: 46px;
+    width: 500px;}
+
+.MidleDiv_SearchBarDiv{
+  border-bottom: groove;
+  border-color: black;
+  height: 50px;
+  border: 2px solid;
+
+}
+
+/*Dropdow Locations*/
+
+.dropdownLocations {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+  } 
+  .dropdownLocations-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdownLocations-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdownLocations a:hover {background-color: #ddd;}
+  .show {display: block;}
+  
+  /*Dropdown Comprar/Alugar*/
+  .dropdownCompAlu {
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 50px;
+  }
+  .dropdownCompAlu-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdownCompAlu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdownCompAlu a:hover {background-color: #ddd;}
+  .show {display: block;}
+
+  
+  /*Dropdown Tipologias*/
+  .dropdownTipologias {
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 50px;
+  }
+  .dropdownTipologias-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdownTipologias-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdownTipologias a:hover {background-color: #ddd;}
+  .show {display: block;}
+  
+  .dropdownSRC{
+    margin: auto;
+    padding: 10px;
+  }
