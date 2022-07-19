@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Properties;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Foundation\Auth\User as AuthUser;
 use Illuminate\Support\Facades\Auth;
 
@@ -30,8 +31,15 @@ class HomeController extends Controller
     public function dashboard(){ 
         $numProperties = count(Properties::all());
         $numUsers = count(User::all());
-        $recentProperties = Properties::orderBy('created_at', 'desc')->take(200)->get();
-        
+        // $recentProperties = Properties::whereBetween('created_at', [Carbon::now()->subWeek()->startOfWeek(), Carbon::now()->subWeek()->endOfWeek()])
+                                        // ->get();
+        $now = Carbon::now();
+        $recentProperties = Properties::whereBetween("created_at", [
+                                        $now->startOfWeek()->format('Y-m-d'),
+                                        $now->endOfWeek()->format('Y-m-d')])
+                                        ->orderBy('created_at', "desc")
+                                        ->get();
+
         if (Auth::user()->hasRole('admin') || Auth::user()->hasRole('superadmin')) {
             return view('admin.dashboard', compact('numProperties', 'numUsers', 'recentProperties'));
         }else{
@@ -59,6 +67,7 @@ class HomeController extends Controller
     }
     public function deleteUser(User $user){
         $user->delete();
+        // dd($user);
         return redirect(url()->previous())->with('message', 'Conta Apagada!');
     }
 }

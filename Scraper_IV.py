@@ -54,53 +54,64 @@ Lista_Objectos = []
 Lista_Updates=[]
 ListaQuerys_ImoVirtual = [
 
+    # ! Lista sem ordem
     "https://www.imovirtual.com/comprar/apartamento/?search[filter_enum_rooms_num][0]=zero",
-    "https://www.imovirtual.com/comprar/apartamento/?search[filter_enum_rooms_num][0]=1",
-    "https://www.imovirtual.com/comprar/apartamento/?search[filter_enum_rooms_num][0]=2",
-    "https://www.imovirtual.com/comprar/apartamento/?search[filter_enum_rooms_num][0]=3",
-    "https://www.imovirtual.com/comprar/apartamento/?search[filter_enum_rooms_num][0]=4",
-    "https://www.imovirtual.com/comprar/apartamento/?search[filter_enum_rooms_num][0]=5",
-    "https://www.imovirtual.com/comprar/apartamento/?search%5Bfilter_enum_rooms_num%5D%5B0%5D=6&search%5Bfilter_enum_rooms_num%5D%5B1%5D=7&search%5Bfilter_enum_rooms_num%5D%5B2%5D=8&search%5Bfilter_enum_rooms_num%5D%5B3%5D=9&search%5Bfilter_enum_rooms_num%5D%5B4%5D=more",
-
-    "https://www.imovirtual.com/arrendar/apartamento/?search[filter_enum_rooms_num][0]=zero",
     "https://www.imovirtual.com/arrendar/apartamento/?search[filter_enum_rooms_num][0]=1",
-    "https://www.imovirtual.com/arrendar/apartamento/?search[filter_enum_rooms_num][0]=2",
-    "https://www.imovirtual.com/arrendar/apartamento/?search[filter_enum_rooms_num][0]=3",
-    "https://www.imovirtual.com/arrendar/apartamento/?search[filter_enum_rooms_num][0]=4",
-    "https://www.imovirtual.com/arrendar/apartamento/?search[filter_enum_rooms_num][0]=5",
-    "https://www.imovirtual.com/arrendar/apartamento/?search%5Bfilter_enum_rooms_num%5D%5B0%5D=6&search%5Bfilter_enum_rooms_num%5D%5B1%5D=7&search%5Bfilter_enum_rooms_num%5D%5B2%5D=8&search%5Bfilter_enum_rooms_num%5D%5B3%5D=9&search%5Bfilter_enum_rooms_num%5D%5B4%5D=more",
-
-    "https://www.imovirtual.com/comprar/moradia/?search[filter_enum_rooms_num][0]=zero",
-    "https://www.imovirtual.com/comprar/moradia/?search[filter_enum_rooms_num][0]=1",
     "https://www.imovirtual.com/comprar/moradia/?search[filter_enum_rooms_num][0]=2",
-    "https://www.imovirtual.com/comprar/moradia/?search[filter_enum_rooms_num][0]=3",
-    "https://www.imovirtual.com/comprar/moradia/?search[filter_enum_rooms_num][0]=4",
-    "https://www.imovirtual.com/comprar/moradia/?search[filter_enum_rooms_num][0]=5",
-    "https://www.imovirtual.com/comprar/moradia/?search%5Bfilter_enum_rooms_num%5D%5B0%5D=6&search%5Bfilter_enum_rooms_num%5D%5B1%5D=7&search%5Bfilter_enum_rooms_num%5D%5B2%5D=8&search%5Bfilter_enum_rooms_num%5D%5B3%5D=9&search%5Bfilter_enum_rooms_num%5D%5B4%5D=more",
-
-    "https://www.imovirtual.com/arrendar/moradia/?search[filter_enum_rooms_num][0]=zero",
-    "https://www.imovirtual.com/arrendar/moradia/?search[filter_enum_rooms_num][0]=1",
-    "https://www.imovirtual.com/arrendar/moradia/?search[filter_enum_rooms_num][0]=2",
     "https://www.imovirtual.com/arrendar/moradia/?search[filter_enum_rooms_num][0]=3",
-    "https://www.imovirtual.com/arrendar/moradia/?search[filter_enum_rooms_num][0]=4",
-    "https://www.imovirtual.com/arrendar/moradia/?search[filter_enum_rooms_num][0]=5",
-    "https://www.imovirtual.com/arrendar/moradia/?search%5Bfilter_enum_rooms_num%5D%5B0%5D=6&search%5Bfilter_enum_rooms_num%5D%5B1%5D=7&search%5Bfilter_enum_rooms_num%5D%5B2%5D=8&search%5Bfilter_enum_rooms_num%5D%5B3%5D=9&search%5Bfilter_enum_rooms_num%5D%5B4%5D=more",
-    
-    "https://www.imovirtual.com/comprar/quintaeherdade/?search[filter_enum_rooms_num][0]=zero",
-    "https://www.imovirtual.com/comprar/quintaeherdade/?search[filter_enum_rooms_num][0]=1",
-    "https://www.imovirtual.com/comprar/quintaeherdade/?search[filter_enum_rooms_num][0]=2",
-    "https://www.imovirtual.com/comprar/quintaeherdade/?search[filter_enum_rooms_num][0]=3",
     "https://www.imovirtual.com/comprar/quintaeherdade/?search[filter_enum_rooms_num][0]=4",
-    "https://www.imovirtual.com/comprar/quintaeherdade/?search[filter_enum_rooms_num][0]=5",
-    "https://www.imovirtual.com/comprar/quintaeherdade/?search%5Bfilter_enum_rooms_num%5D%5B0%5D=6&search%5Bfilter_enum_rooms_num%5D%5B1%5D=7&search%5Bfilter_enum_rooms_num%5D%5B2%5D=8&search%5Bfilter_enum_rooms_num%5D%5B3%5D=9&search%5Bfilter_enum_rooms_num%5D%5B4%5D=more",
-    
-    "https://www.imovirtual.com/arrendar/quintaeherdade/?search[filter_enum_rooms_num][0]=zero",
-    "https://www.imovirtual.com/arrendar/quintaeherdade/?search[filter_enum_rooms_num][0]=1",
-    "https://www.imovirtual.com/arrendar/quintaeherdade/?search[filter_enum_rooms_num][0]=2",
-    "https://www.imovirtual.com/arrendar/quintaeherdade/?search[filter_enum_rooms_num][0]=3",
-    "https://www.imovirtual.com/arrendar/quintaeherdade/?search[filter_enum_rooms_num][0]=4",
-    "https://www.imovirtual.com/arrendar/quintaeherdade/?search[filter_enum_rooms_num][0]=5",
     "https://www.imovirtual.com/arrendar/quintaeherdade/?search%5Bfilter_enum_rooms_num%5D%5B0%5D=6&search%5Bfilter_enum_rooms_num%5D%5B1%5D=7&search%5Bfilter_enum_rooms_num%5D%5B2%5D=8&search%5Bfilter_enum_rooms_num%5D%5B3%5D=9&search%5Bfilter_enum_rooms_num%5D%5B4%5D=more"
+
+
+# =================================================
+
+    # "https://www.imovirtual.com/comprar/apartamento/?search[filter_enum_rooms_num][0]=zero",
+    # "https://www.imovirtual.com/comprar/apartamento/?search[filter_enum_rooms_num][0]=1",
+    # "https://www.imovirtual.com/comprar/apartamento/?search[filter_enum_rooms_num][0]=2",
+    # "https://www.imovirtual.com/comprar/apartamento/?search[filter_enum_rooms_num][0]=3",
+    # "https://www.imovirtual.com/comprar/apartamento/?search[filter_enum_rooms_num][0]=4",
+    # "https://www.imovirtual.com/comprar/apartamento/?search[filter_enum_rooms_num][0]=5",
+    # "https://www.imovirtual.com/comprar/apartamento/?search%5Bfilter_enum_rooms_num%5D%5B0%5D=6&search%5Bfilter_enum_rooms_num%5D%5B1%5D=7&search%5Bfilter_enum_rooms_num%5D%5B2%5D=8&search%5Bfilter_enum_rooms_num%5D%5B3%5D=9&search%5Bfilter_enum_rooms_num%5D%5B4%5D=more",
+
+    # "https://www.imovirtual.com/arrendar/apartamento/?search[filter_enum_rooms_num][0]=zero",
+    # "https://www.imovirtual.com/arrendar/apartamento/?search[filter_enum_rooms_num][0]=1",
+    # "https://www.imovirtual.com/arrendar/apartamento/?search[filter_enum_rooms_num][0]=2",
+    # "https://www.imovirtual.com/arrendar/apartamento/?search[filter_enum_rooms_num][0]=3",
+    # "https://www.imovirtual.com/arrendar/apartamento/?search[filter_enum_rooms_num][0]=4",
+    # "https://www.imovirtual.com/arrendar/apartamento/?search[filter_enum_rooms_num][0]=5",
+    # "https://www.imovirtual.com/arrendar/apartamento/?search%5Bfilter_enum_rooms_num%5D%5B0%5D=6&search%5Bfilter_enum_rooms_num%5D%5B1%5D=7&search%5Bfilter_enum_rooms_num%5D%5B2%5D=8&search%5Bfilter_enum_rooms_num%5D%5B3%5D=9&search%5Bfilter_enum_rooms_num%5D%5B4%5D=more",
+
+    # "https://www.imovirtual.com/comprar/moradia/?search[filter_enum_rooms_num][0]=zero",
+    # "https://www.imovirtual.com/comprar/moradia/?search[filter_enum_rooms_num][0]=1",
+    # "https://www.imovirtual.com/comprar/moradia/?search[filter_enum_rooms_num][0]=2",
+    # "https://www.imovirtual.com/comprar/moradia/?search[filter_enum_rooms_num][0]=3",
+    # "https://www.imovirtual.com/comprar/moradia/?search[filter_enum_rooms_num][0]=4",
+    # "https://www.imovirtual.com/comprar/moradia/?search[filter_enum_rooms_num][0]=5",
+    # "https://www.imovirtual.com/comprar/moradia/?search%5Bfilter_enum_rooms_num%5D%5B0%5D=6&search%5Bfilter_enum_rooms_num%5D%5B1%5D=7&search%5Bfilter_enum_rooms_num%5D%5B2%5D=8&search%5Bfilter_enum_rooms_num%5D%5B3%5D=9&search%5Bfilter_enum_rooms_num%5D%5B4%5D=more",
+
+    # "https://www.imovirtual.com/arrendar/moradia/?search[filter_enum_rooms_num][0]=zero",
+    # "https://www.imovirtual.com/arrendar/moradia/?search[filter_enum_rooms_num][0]=1",
+    # "https://www.imovirtual.com/arrendar/moradia/?search[filter_enum_rooms_num][0]=2",
+    # "https://www.imovirtual.com/arrendar/moradia/?search[filter_enum_rooms_num][0]=3",
+    # "https://www.imovirtual.com/arrendar/moradia/?search[filter_enum_rooms_num][0]=4",
+    # "https://www.imovirtual.com/arrendar/moradia/?search[filter_enum_rooms_num][0]=5",
+    # "https://www.imovirtual.com/arrendar/moradia/?search%5Bfilter_enum_rooms_num%5D%5B0%5D=6&search%5Bfilter_enum_rooms_num%5D%5B1%5D=7&search%5Bfilter_enum_rooms_num%5D%5B2%5D=8&search%5Bfilter_enum_rooms_num%5D%5B3%5D=9&search%5Bfilter_enum_rooms_num%5D%5B4%5D=more",
+    
+    # "https://www.imovirtual.com/comprar/quintaeherdade/?search[filter_enum_rooms_num][0]=zero",
+    # "https://www.imovirtual.com/comprar/quintaeherdade/?search[filter_enum_rooms_num][0]=1",
+    # "https://www.imovirtual.com/comprar/quintaeherdade/?search[filter_enum_rooms_num][0]=2",
+    # "https://www.imovirtual.com/comprar/quintaeherdade/?search[filter_enum_rooms_num][0]=3",
+    # "https://www.imovirtual.com/comprar/quintaeherdade/?search[filter_enum_rooms_num][0]=4",
+    # "https://www.imovirtual.com/comprar/quintaeherdade/?search[filter_enum_rooms_num][0]=5",
+    # "https://www.imovirtual.com/comprar/quintaeherdade/?search%5Bfilter_enum_rooms_num%5D%5B0%5D=6&search%5Bfilter_enum_rooms_num%5D%5B1%5D=7&search%5Bfilter_enum_rooms_num%5D%5B2%5D=8&search%5Bfilter_enum_rooms_num%5D%5B3%5D=9&search%5Bfilter_enum_rooms_num%5D%5B4%5D=more",
+    
+    # "https://www.imovirtual.com/arrendar/quintaeherdade/?search[filter_enum_rooms_num][0]=zero",
+    # "https://www.imovirtual.com/arrendar/quintaeherdade/?search[filter_enum_rooms_num][0]=1",
+    # "https://www.imovirtual.com/arrendar/quintaeherdade/?search[filter_enum_rooms_num][0]=2",
+    # "https://www.imovirtual.com/arrendar/quintaeherdade/?search[filter_enum_rooms_num][0]=3",
+    # "https://www.imovirtual.com/arrendar/quintaeherdade/?search[filter_enum_rooms_num][0]=4",
+    # "https://www.imovirtual.com/arrendar/quintaeherdade/?search[filter_enum_rooms_num][0]=5",
+    # "https://www.imovirtual.com/arrendar/quintaeherdade/?search%5Bfilter_enum_rooms_num%5D%5B0%5D=6&search%5Bfilter_enum_rooms_num%5D%5B1%5D=7&search%5Bfilter_enum_rooms_num%5D%5B2%5D=8&search%5Bfilter_enum_rooms_num%5D%5B3%5D=9&search%5Bfilter_enum_rooms_num%5D%5B4%5D=more"
 
     ]
 Lista_Links = []
@@ -118,7 +129,7 @@ for query in ListaQuerys_ImoVirtual:
         Imoveis_All_Cards = div_Cards.find_all('article')
         link_for_braker = 0
         for card in Imoveis_All_Cards:
-            if link_for_braker == 5: 
+            if link_for_braker == 1: 
                 break
             try:
                 Imovel_Codigo_Link = card.find('a')

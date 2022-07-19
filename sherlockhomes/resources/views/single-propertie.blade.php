@@ -67,8 +67,12 @@
 					@if($propertie->usefull_area != 0)
 						<p><b>Área Útil:</b> {{number_format($propertie->usefull_area, 0,',','.').' m²' }}</p>
 					@endif
-					<p><b>Área Bruta:</b> {{number_format($propertie->gross_area, 0,',','.').' m²' }}</p>
-					<p><b>Casas de Banho:</b> {{$propertie->bathrooms}}</p>
+					@if($propertie->gross_area != 0)
+						<p><b>Área Bruta:</b> {{number_format($propertie->gross_area, 0,',','.').' m²' }}</p>
+					@endif
+					@if ($propertie->bathrooms != 0)
+						<p><b>Casas de Banho:</b> {{$propertie->bathrooms}}</p>
+					@endif
 				</div>
 			</div>
         
@@ -109,9 +113,6 @@
 		      </div>
 				@endif
 			  @endforeach
-			  <div class="carousel-item">
-		        <img src="https://my.matterport.com/show/?m=hru1kmSPP3o&mls=1&play=1&title=0" class="d-block w-100" width=800 height=400>
-		      </div>
 		    </div>
 		    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
 		      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -150,8 +151,9 @@
 							  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
 
 							    <li class="nav-item">
-							      <a class="nav-link active" id="pills-description-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-description" aria-expanded="true">Descrição</a>
-							    </li>
+							      {{-- <a class="nav-link active" id="pills-description-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-description" aria-expanded="true">Descrição</a> --}}
+							    	<div>Descrição</div>
+								</li>
 							    {{-- <li class="nav-item">
 							      <a class="nav-link" id="pills-review-tab" data-toggle="pill" href="#pills-review" role="tab" aria-controls="pills-review" aria-expanded="true">Evolução do Preço</a>
 							    </li> --}}

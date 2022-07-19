@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\locations;
+use App\Models\Propertie;
 use Illuminate\Http\Request;
 use App\Models\Properties;
 use App\Models\TypePrice;
@@ -57,11 +58,18 @@ class Main extends Controller
         $typeProperty = TypeProperty::all();
         $typology = TypologyProperty::all();
         $locations = locations::all();
+        if(count($properties) != 0){
+            $prec_med =  ($properties->sum('price'))/count($properties);
+        }else{
+            $prec_med = 0;
+        }
+            return view('index', compact('typePrice', 'typeProperty', 'typology', 'locations', 'properties'));
 
-        $prec_med =  ($properties->sum('price'))/count($properties);
-        // dd($prec_med);
-        return view('index', compact('typePrice', 'typeProperty', 'typology', 'locations', 'properties'));
+    }
 
+    public function about(){
+        $n_props = Propertie::count();
+        return view('about', compact('n_props'));
     }
     
     public function show(Properties $propertie)

@@ -101,7 +101,7 @@
 						</p>
         				<ul class="property_list">
 						@if($propertie->typology_id == 1)
-        					<li><span class="flaticon-bed"></span>0</li>
+        					{{-- <li><span class="flaticon-bed"></span>0</li> --}}
 						@elseif($propertie->typology_id == 2)
         					<li><span class="flaticon-bed"></span>1</li>
 						@elseif($propertie->typology_id == 3)
@@ -116,7 +116,9 @@
         					<li><span class="flaticon-bed"></span>+5</li>
 						@endif
         				
-							<li><span class="flaticon-bathtub"></span>{{$propertie->bathrooms}}</li>
+							@if($propertie->bathrooms != 0)
+								<li><span class="flaticon-bathtub"></span>{{$propertie->bathrooms}}</li>
+							@endif
 							@if($propertie->usefull_area != 0)
         						<li><span class="flaticon-floor-plan"></span>{{number_format($propertie->usefull_area, 0,',','.')}}m²</li>
 							@endif

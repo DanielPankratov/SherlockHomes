@@ -1,0 +1,15 @@
+Para iniciar o scraping do CasaSapo e do ImoVirtual, 
+basta iniciar o ficheiro Start_All.bat, que irá compilar dois scripts 
+e abrir duas janelas. Enquanto estas trabalham, o utilizador poderá fazer 
+outras tarefas no seu computador.
+
+Para iniciar o scraping do BPI basta iniciar o ficheiro "BPI_Scrapper_Selenium", este 
+irá abrir duas janelas, das quais uma delas será do Chrome
+[[ ATENÇÂO ]]
+Aconselha-se a que o utilizador não execute nenhuma tarefa no seu computador, 
+nem minimize ou ajuste as janelas abertas pelo scraping,
+pois isso irá interferir com o bom funcionamento do webscraper, 
+podendo até terminar o processo sem recolher nenhuma informação.
+
+
+

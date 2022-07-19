@@ -53,53 +53,62 @@ Lista_Objectos = []
 Lista_Updates=[]
 ListaQuerys_CasaSapo = [
 
+# ! Lista sem ordem
     "https://casa.sapo.pt/comprar-apartamentos/t0/",
-    "https://casa.sapo.pt/comprar-apartamentos/t1/",
-    "https://casa.sapo.pt/comprar-apartamentos/t2/",
-    "https://casa.sapo.pt/comprar-apartamentos/t3/",
-    "https://casa.sapo.pt/comprar-apartamentos/t4/",
-    "https://casa.sapo.pt/comprar-apartamentos/t5/",
-    "https://casa.sapo.pt/comprar-apartamentos/t6-ou-superior/",
-    
-    "https://casa.sapo.pt/alugar-apartamentos/t0/",
     "https://casa.sapo.pt/alugar-apartamentos/t1/",
-    "https://casa.sapo.pt/alugar-apartamentos/t2/",
-    "https://casa.sapo.pt/alugar-apartamentos/t3/",
-    "https://casa.sapo.pt/alugar-apartamentos/t4/",
-    "https://casa.sapo.pt/alugar-apartamentos/t5/",
-    "https://casa.sapo.pt/alugar-apartamentos/t6-ou-superior/",
-    
-    "https://casa.sapo.pt/alugar-moradias/t0/",
-    "https://casa.sapo.pt/alugar-moradias/t1/",
     "https://casa.sapo.pt/alugar-moradias/t2/",
-    "https://casa.sapo.pt/alugar-moradias/t3/",
-    "https://casa.sapo.pt/alugar-moradias/t4/",
-    "https://casa.sapo.pt/alugar-moradias/t5/",
-    "https://casa.sapo.pt/alugar-moradias/t6-ou-superior/",
-    
-    "https://casa.sapo.pt/comprar-moradias/t0/",
-    "https://casa.sapo.pt/comprar-moradias/t1/",
-    "https://casa.sapo.pt/comprar-moradias/t2/",
     "https://casa.sapo.pt/comprar-moradias/t3/",
-    "https://casa.sapo.pt/comprar-moradias/t4/",
-    "https://casa.sapo.pt/comprar-moradias/t5/",
-    "https://casa.sapo.pt/comprar-moradias/t6-ou-superior/",
-
-    "https://casa.sapo.pt/alugar-quintas-e-herdades/t0/",
-    "https://casa.sapo.pt/alugar-quintas-e-herdades/t1/",
-    "https://casa.sapo.pt/alugar-quintas-e-herdades/t2/",
-    "https://casa.sapo.pt/alugar-quintas-e-herdades/t3/",
     "https://casa.sapo.pt/alugar-quintas-e-herdades/t4/",
-    "https://casa.sapo.pt/alugar-quintas-e-herdades/t5/",
-    "https://casa.sapo.pt/alugar-quintas-e-herdades/t6-ou-superior/",
-
-    "https://casa.sapo.pt/comprar-quintas-e-herdades/t0/",
-    "https://casa.sapo.pt/comprar-quintas-e-herdades/t1/",
-    "https://casa.sapo.pt/comprar-quintas-e-herdades/t2/",
-    "https://casa.sapo.pt/comprar-quintas-e-herdades/t3/",
-    "https://casa.sapo.pt/comprar-quintas-e-herdades/t4/",
-    "https://casa.sapo.pt/comprar-quintas-e-herdades/t5/",
     "https://casa.sapo.pt/comprar-quintas-e-herdades/t6-ou-superior/"
+
+# =================================================
+    # "https://casa.sapo.pt/comprar-apartamentos/t0/",
+    # "https://casa.sapo.pt/comprar-apartamentos/t1/",
+    # "https://casa.sapo.pt/comprar-apartamentos/t2/",
+    # "https://casa.sapo.pt/comprar-apartamentos/t3/",
+    # "https://casa.sapo.pt/comprar-apartamentos/t4/",
+    # "https://casa.sapo.pt/comprar-apartamentos/t5/",
+    # "https://casa.sapo.pt/comprar-apartamentos/t6-ou-superior/",
+    
+    # "https://casa.sapo.pt/alugar-apartamentos/t0/",
+    # "https://casa.sapo.pt/alugar-apartamentos/t1/",
+    # "https://casa.sapo.pt/alugar-apartamentos/t2/",
+    # "https://casa.sapo.pt/alugar-apartamentos/t3/",
+    # "https://casa.sapo.pt/alugar-apartamentos/t4/",
+    # "https://casa.sapo.pt/alugar-apartamentos/t5/",
+    # "https://casa.sapo.pt/alugar-apartamentos/t6-ou-superior/",
+    
+    # "https://casa.sapo.pt/alugar-moradias/t0/",
+    # "https://casa.sapo.pt/alugar-moradias/t1/",
+    # "https://casa.sapo.pt/alugar-moradias/t2/",
+    # "https://casa.sapo.pt/alugar-moradias/t3/",
+    # "https://casa.sapo.pt/alugar-moradias/t4/",
+    # "https://casa.sapo.pt/alugar-moradias/t5/",
+    # "https://casa.sapo.pt/alugar-moradias/t6-ou-superior/",
+    
+    # "https://casa.sapo.pt/comprar-moradias/t0/",
+    # "https://casa.sapo.pt/comprar-moradias/t1/",
+    # "https://casa.sapo.pt/comprar-moradias/t2/",
+    # "https://casa.sapo.pt/comprar-moradias/t3/",
+    # "https://casa.sapo.pt/comprar-moradias/t4/",
+    # "https://casa.sapo.pt/comprar-moradias/t5/",
+    # "https://casa.sapo.pt/comprar-moradias/t6-ou-superior/",
+
+    # "https://casa.sapo.pt/alugar-quintas-e-herdades/t0/",
+    # "https://casa.sapo.pt/alugar-quintas-e-herdades/t1/",
+    # "https://casa.sapo.pt/alugar-quintas-e-herdades/t2/",
+    # "https://casa.sapo.pt/alugar-quintas-e-herdades/t3/",
+    # "https://casa.sapo.pt/alugar-quintas-e-herdades/t4/",
+    # "https://casa.sapo.pt/alugar-quintas-e-herdades/t5/",
+    # "https://casa.sapo.pt/alugar-quintas-e-herdades/t6-ou-superior/",
+
+    # "https://casa.sapo.pt/comprar-quintas-e-herdades/t0/",
+    # "https://casa.sapo.pt/comprar-quintas-e-herdades/t1/",
+    # "https://casa.sapo.pt/comprar-quintas-e-herdades/t2/",
+    # "https://casa.sapo.pt/comprar-quintas-e-herdades/t3/",
+    # "https://casa.sapo.pt/comprar-quintas-e-herdades/t4/",
+    # "https://casa.sapo.pt/comprar-quintas-e-herdades/t5/",
+    # "https://casa.sapo.pt/comprar-quintas-e-herdades/t6-ou-superior/"
     
     ]
 Lista_Links = []
@@ -115,7 +124,7 @@ for query in ListaQuerys_CasaSapo:
         Imoveis_ALL_Cards = soup.find_all('div', class_='property')
         link_for_braker = 0 
         for imoveis in Imoveis_ALL_Cards: #? Este for guarda todos os links das casas da página na lista "Lista_Links"
-            if link_for_braker == 5: #!@
+            if link_for_braker == 1: #!@
                 break
             Imovel_Codigo_Link = imoveis.find('a')
             link = Imovel_Codigo_Link.get('href')
@@ -316,16 +325,11 @@ for link in Lista_Links:
                 continue
         
         print(string_links)
-        # div_fotos = main.find('div', 'detail-media-imgs')
-        # Links_Fotos = div_fotos.find_all('img')
-        # Foto_Link = Links_Fotos[0].get('src').replace('.jpg.webp', '.jpg')
 
         Foto_Link = string_links
         Lista_Objectos.append( Obj_Imovel(titulo, preco, tipo_preco, location,
                                           tipo_imovel, tipologia, N_wc, Area_Bruta,
                                           Area_Util, website, Descricao, link, id, Foto_Link) )
-        # else:
-        #     continue
     except:
         continue
 

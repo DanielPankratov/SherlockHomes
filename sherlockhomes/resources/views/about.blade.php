@@ -19,23 +19,23 @@
 		<section class="ftco-counter img" id="section-counter">
     	<div class="container">
     		<div class="row">
-          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+          {{-- <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
             <div class="block-18 py-4 mb-4">
               <div class="text text-border d-flex align-items-center">
                 <strong class="number" data-number="306">0</strong>
                 <span>Nº<br>Pesquisas</span>
               </div>
             </div>
-          </div>
+          </div> --}}
           <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
             <div class="block-18 py-4 mb-4">
               <div class="text text-border d-flex align-items-center">
-                <strong class="number" data-number="1090">0</strong>
+                <strong class="number" data-number="{{$n_props}}">0</strong>
                 <span>Nº<br>Imóveis</span>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+          {{-- <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
             <div class="block-18 py-4 mb-4">
               <div class="text text-border d-flex align-items-center">
                 <strong class="number" data-number="209">0</strong>
@@ -50,7 +50,7 @@
                 <span>Total <br>Branches</span>
               </div>
             </div>
-          </div>
+          </div> --}}
         </div>
     	</div>
     </section>

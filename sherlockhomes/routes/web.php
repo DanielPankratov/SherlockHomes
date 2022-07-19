@@ -3,9 +3,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\Main::class, 'index']);
 Auth::routes();
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/about', [App\Http\Controllers\Main::class, 'about']);
 Route::get('/contact', function () {
     return view('contact');
 });

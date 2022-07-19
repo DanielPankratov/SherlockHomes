@@ -80,7 +80,7 @@
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
             <h2 class="ftco-heading-2">SherlockHomes</h2>
-            <p>Encontre o caminho para casa.</p>
+            <p>Encontre a sua casa de sonho!</p>
             <ul class="ftco-footer-social list-unstyled mt-5">
               <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
               <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -91,14 +91,13 @@
         
         <div class="col-md">
           <div class="ftco-footer-widget mb-4 ml-md-4">
-            <h2 class="ftco-heading-2">About Us</h2>
+            <h2 class="ftco-heading-2">Sobre Nós</h2>
             <ul class="list-unstyled">
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Our Story</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Meet the team</a></li>
+              <li><a href="/about"><span class="icon-long-arrow-right mr-2"></span>O que é a SherlockHomes?</a></li>
             </ul>
           </div>
         </div>
-        <div class="col-md">
+        {{-- <div class="col-md">
           <div class="ftco-footer-widget mb-4">
             <h2 class="ftco-heading-2">Company</h2>
             <ul class="list-unstyled">
@@ -106,14 +105,14 @@
               <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
             </ul>
           </div>
-        </div>
+        </div> --}}
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Have a Questions?</h2>
+            <h2 class="ftco-heading-2">Contacte-nos</h2>
             <div class="block-23 mb-3">
               <ul>
                 <li><a href="#"><span class="icon icon-envelope pr-4"></span><span
-                      class="text">info@yourdomain.com</span></a></li>
+                      class="text">exemplo@sherlockhomes.com</span></a></li>
               </ul>
             </div>
           </div>
@@ -158,9 +157,6 @@
   <script src="../js/scrollax.min.js"></script>
 
   <script src="../js/main.js"></script>
-    <script src="../js/propertieSlide.js"></script>
-
-
+  <script src="../js/propertieSlide.js"></script>
 </body>
-
 </html>

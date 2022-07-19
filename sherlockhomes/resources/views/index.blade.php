@@ -67,7 +67,7 @@
       </a>
     </div>
   </div>
-
+@if(count($properties) != 0)
   <section class="ftco-section goto-here">
     <div class="container">
       <div class="row justify-content-center">
@@ -185,8 +185,9 @@
       </div>
     </div>
   </section>
+@endif
 
-  <section class="ftco-section ftco-no-pb">
+  {{-- <section class="ftco-section ftco-no-pb">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-12 heading-section text-center ftco-animate mb-5">
@@ -235,5 +236,5 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
   @endsection
