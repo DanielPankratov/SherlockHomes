@@ -30,7 +30,7 @@ class PropertieController extends Controller
         if (Auth::user()->hasRole('admin') || Auth::user()->hasRole('superadmin')) {
 
             // $properties = Properties::orderBy('id', 'DESC')->get();
-            $properties = Properties::all();
+            $properties = Properties::orderBy('created_at', "desc")->get();
             $fotos = Foto::all();
 
             return view('admin.properties', compact('properties', 'fotos'));

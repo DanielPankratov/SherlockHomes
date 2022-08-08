@@ -31,10 +31,15 @@ class HomeController extends Controller
     public function dashboard(){ 
         $numProperties = count(Properties::all());
         $numUsers = count(User::all());
-        $recentProperties = Properties::all()
-                                        ->whereBetween('created_at', [Carbon::now()->subWeek()->startOfWeek(), Carbon::now()->subWeek()->endOfWeek()])
-                                        ;
-        
+        // $recentProperties = Properties::whereBetween('created_at', [Carbon::now()->subWeek()->startOfWeek(), Carbon::now()->subWeek()->endOfWeek()])
+                                        // ->get();
+        $now = Carbon::now();
+        $recentProperties = Properties::whereBetween("created_at", [
+                                        $now->startOfWeek()->format('Y-m-d'),
+                                        $now->endOfWeek()->format('Y-m-d')])
+                                        ->orderBy('created_at', "desc")
+                                        ->get();
+
         if (Auth::user()->hasRole('admin') || Auth::user()->hasRole('superadmin')) {
             return view('admin.dashboard', compact('numProperties', 'numUsers', 'recentProperties'));
         }else{
