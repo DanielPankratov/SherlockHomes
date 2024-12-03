@@ -15,9 +15,11 @@ Todos os imóveis importados através de web scrapping contêm uma hiperligaçã
 </div>
 
 
-
 * Python - Para desenvolver os bots que fazem a recolha de dados na internet  
 * Laravel - Framework PHP para poder manipular os dados do meu website
+
+[Baixar documento Word](RelatorioPAP.pdf)
+
 
 https://github.com/user-attachments/assets/ffbc6e07-1da1-450e-9572-8058311179eb
 
