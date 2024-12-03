@@ -1,13 +1,15 @@
 # SherlockHomes
 
+Este projeto foi desenvolvido como parte do projeto final do Curso Profissional Técnico de Gestão e
+Programação de Sistemas Informáticos(CPTGPSI).
+
 <br>
 
 ![shl](https://github.com/user-attachments/assets/d521d8cd-e4a0-43f3-8403-54decc780638)
 
 <br>
 
-Este projeto foi desenvolvido como parte do projeto final do Curso Profissional Técnico de Gestão e
-Programação de Sistemas Informáticos(CPTGPSI).
+
 
 O projeto consiste numa plataforma de pesquisa de imóveis, que agrega num único sítio, imóveis disponibilizados por outros sites. Permite ao utilizador efetuar pesquisas de imóveis utilizando filtros por tipo de imóvel, localização, tipologia e tipo de negócio (comprar ou alugar), adicionar imóveis à sua lista de favoritos e consultar todas as suas características. 
 Os preços dos imóveis são catalogados através de um sistema de cores, verde para os preços 10% abaixo da média e vermelho para os preços 10% acima da média.
