@@ -48,5 +48,6 @@ https://github.com/user-attachments/assets/ffbc6e07-1da1-450e-9572-8058311179eb
 * Requests - Biblioteca Python para fazer requests
 
 <br>
+
 Ver [Relatório do Projeto](RelatorioPAP.pdf).
 
